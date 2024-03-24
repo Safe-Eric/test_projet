@@ -18,7 +18,7 @@ jobs:
         uses: hoverkraft-tech/compose-action@v1.5.1
         with:
           compose-file: "./docker-compose.yml" # Spécification du fichier docker-compose à utiliser
-          down-flags: "--volumes" # Options supplémentaires pour la commande docker-compose down
+          #down-flags: "--volumes" # Options supplémentaires pour la commande docker-compose down
           #services: | # Liste des services Docker Compose à démarrer
           #  helloworld2
           #  helloworld3
