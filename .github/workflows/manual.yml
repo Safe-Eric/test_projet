@@ -19,7 +19,10 @@ jobs:
         with:
           compose-file: "./docker-compose.yml" # Spécification du fichier docker-compose à utiliser
           #down-flags: "--volumes" # Options supplémentaires pour la commande docker-compose down
-          #services: | # Liste des services Docker Compose à démarrer
-          #  helloworld2
-          #  helloworld3
+          services: | # Liste des services Docker Compose à démarrer
+            api
+            airflow-webserver
+            airflow-scheduler
+            airflow-init
+            postgres
 
